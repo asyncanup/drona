@@ -23,39 +23,39 @@ DRONO
 
 ## Command List
 
-* `e`: Disable Emergency (turn the lights green if they're red)
-* `t`: Take off
-* `l`: Land. Landing sends an email with flight duration, if configured in `copter.js`
-* `s`: Stop the current motion and hover
+* `e()`: Disable Emergency (turn the lights green if they're red)
+* `t()`: Take off
+* `l()`: Land. Landing sends an email with flight duration, if configured in `copter.js`
+* `s()`: Stop the current motion and hover
 
-* `u`: Start rising up
-* `d`: Start lowering to ground
+* `u()`: Start rising up
+* `d()`: Start lowering to ground
 
-* `ff`: Start moving to front
-* `bb`: Start moving backwards
-* `ll`: Start moving to left (strafe, not turn)
-* `rr`: Start moving to right (strafe, not turn)
+* `ff()`: Start moving to front
+* `bb()`: Start moving backwards
+* `ll()`: Start moving to left (strafe, not turn)
+* `rr()`: Start moving to right (strafe, not turn)
 
-* `w`: Wave animation
+* `w()`: Wave animation
 
-* `gl`: Move swiftly to left and stop
-* `gr`: Move swiftly to right and stop
-* `gf`: Move swiftly forward and stop
-* `gb`: Move swiftly backward and stop
+* `gl()`: Move swiftly to left and stop
+* `gr()`: Move swiftly to right and stop
+* `gf()`: Move swiftly forward and stop
+* `gb()`: Move swiftly backward and stop
 
-* `fa`: Flip ahead (just lovely)
-* `fb`: Flib Backward
-* `fl`: Flip Left
-* `fr`: Flip Right
+* `fa()`: Flip ahead (just lovely)
+* `fb()`: Flib Backward
+* `fl()`: Flip Left
+* `fr()`: Flip Right
 
-* `yd`: Yaw Dance
-* `pd`: Phi Dance
-* `td`: Theta Dance
+* `yd()`: Yaw Dance
+* `pd()`: Phi Dance
+* `td()`: Theta Dance
 
-* `ptm`: Phi Theta mixed (it's nice)
-* `dptm`: Double Phi Theta mixed
+* `ptm()`: Phi Theta mixed (it's nice)
+* `dptm()`: Double Phi Theta mixed
 
-* `data`: Get mailed a copy of current navigation data (need to put your email in copter.js)
-* `testMail`: Check if sending mail is even working
+* `data()`: Get mailed a copy of current navigation data (need to put your email in copter.js)
+* `testMail()`: Check if sending mail is even working
 
 Tested in Mac OS.
