@@ -48,7 +48,7 @@ module.exports = _this = {
     dptm: bound("animate", "doublePhiThetaMixed", 4000),
     
     fa: bound("animate", "flipAhead", 1500),
-    fb: bound("animate", "flipBack", 1500),
+    fb: bound("animate", "flipBehind", 1500),
     fl: bound("animate", "flipLeft", 1500),
     fr: bound("animate", "flipRight", 1500),
 

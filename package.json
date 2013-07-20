@@ -1,6 +1,6 @@
 {
   "name": "drono",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Anup Bishnoi <pixelsallover@gmail.com>",
   "description": "AR Drone experiments",
   "main": "index",
