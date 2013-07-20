@@ -13,7 +13,6 @@
     "nodecopter"
   ],
   "dependencies": {
-    "apper": "~1.0.2",
     "ar-drone": "~0.1.0",
     "nodemailer": "~0.5.0"
   },
