@@ -40,12 +40,12 @@ module.exports = _this = {
     gf: bound("animate", "thetaM30Deg", 1000),
     gb: bound("animate", "theta30Deg", 1000),
     
-    yd: bound("animate", "yawDance", 4000),
-    pd: bound("animate", "phiDance", 4000),
-    td: bound("animate", "thetaDance", 4000),
+    d1: bound("animate", "phiDance", 4000),
+    d2: bound("animate", "thetaDance", 4000),
+    d3: bound("animate", "yawDance", 4000),
 
-    ptm: bound("animate", "phiThetaMixed", 4000),
-    dptm: bound("animate", "doublePhiThetaMixed", 4000),
+    d4: bound("animate", "phiThetaMixed", 4000),
+    d5: bound("animate", "doublePhiThetaMixed", 4000),
     
     fa: bound("animate", "flipAhead", 1500),
     fb: bound("animate", "flipBehind", 1500),
