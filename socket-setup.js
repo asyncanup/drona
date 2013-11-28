@@ -1,6 +1,6 @@
 var socket = require("./socket-client"),
     _ = require("underscore"),
-    drone = require("./drone-mock");
+    drone = require("./drone");
 
 module.exports = function (app) {
     

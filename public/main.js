@@ -9,7 +9,7 @@ socket.on("authorized", function () {
 });
 
 socket.on("navdata", function (navdata) {
-    el(".navdata").innerText = navdata.demo.altitudeMeters;
+    el(".navdata").innerText = navdata && navdata.demo && navdata.demo.altitudeMeters;
 });
 
 socket.on("winner", function (player) {
