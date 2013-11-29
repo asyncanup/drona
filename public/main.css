@@ -1,0 +1,51 @@
+.container {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+[data-vote] {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.container.inactive {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.container.inactive [data-vote] {
+    background-color: #bbb;
+}
+[data-vote] {
+	border: 1px solid white;
+	position: relative;
+}
+[data-vote] > .animation {
+	position: absolute;
+    color: white;
+    font-size: 2em;
+}
+[data-vote].first {
+    background-color: #90ca77;
+}
+[data-vote].second {
+    background-color: #81c6dd;
+}
+[data-vote].third {
+    background-color: #e9b64d;
+}
+[data-vote].fourth {
+    background-color: #e48743;
+}
+[data-vote].fifth {
+    background-color: #9e3b33;
+}
+[data-vote].sixth {
+    background-color: rgba(143, 134, 189, 0.86);
+}

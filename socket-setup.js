@@ -14,14 +14,14 @@ module.exports = function (app) {
     });
 
     socket.on("action", function (data) {
-        console.log(data.call + "(" + _.toArray(data.args).join(", ") + ")");
+        sendLog(data.call + "(" + _.toArray(data.args).join(", ") + ")");
 
         drone[data.call].apply(drone, (data.args || []));
     });
 
     drone.on("navdata", _.throttle(function (navdata) {
         socket.emit("navdata", navdata);
-    }, 500));
+    }, 100));
 
     function sendLog(msg) {
         socket.send(msg);

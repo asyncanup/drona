@@ -1,2 +1,2 @@
 var socketIO = require("socket.io-client");
-module.exports = socketIO.connect("http://localhost:3000/drone");
+module.exports = socketIO.connect(require("./config").socketServer + "/drone");

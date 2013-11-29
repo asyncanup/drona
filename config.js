@@ -1,0 +1,1 @@
+exports.socketServer = "http://localhost:3000";//www.roughregister.com";

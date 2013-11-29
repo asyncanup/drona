@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:3000/drone");
+var socket = io.connect((window.socketServer || "") + "/drone");
 
 socket.on("connect", function () {
     socket.emit("identification", { type: "projector" });
@@ -9,14 +9,16 @@ socket.on("authorized", function () {
 });
 
 socket.on("navdata", function (navdata) {
-    el(".navdata").innerText = navdata && navdata.demo && navdata.demo.altitudeMeters;
+    $(".navdata").text(navdata && navdata.demo && navdata.demo.altitudeMeters);
 });
 
 socket.on("winner", function (player) {
-    el(".winner").innerText = player + " has won this round!";
+    $(".winner").text(player + " has won this round!");
 });
 
-socket.on("stream video", startVideo);
+socket.on("action", function (action) {
+    console.log(action);
+});
 
 function sendLog(msg) {
     socket.send(msg);
@@ -29,10 +31,10 @@ socket.on("message", function (msg) {
 
 var startedStreaming;
 function startVideo() {
+    sendLog("Starting to stream video!");
     if (!startedStreaming) {
-        new NodecopterStream(document.getElementById("png-stream"));
+        new NodecopterStream($(".png-stream")[0]);
         startedStreaming = true;
     }
 }
-
-var el = document.querySelector.bind(document);
+startVideo();
